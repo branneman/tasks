@@ -1,0 +1,14 @@
+language: node_js
+
+os:
+  - linux
+  - osx
+
+node_js:
+  - lts/*
+
+script:
+  - npm run lint
+  - npm run test:unit
+  - npm run test:e2e
+  - npm run build
